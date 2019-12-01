@@ -1,0 +1,89 @@
+/* WEBD 1102 Final Assignment
+ * By Curtis Jones
+ * Due December 14, 2019 */
+
+/* Colours:
+ * #CFDBD5 -- Light Grey (No dumb name to fix)
+ * #6EB4D1 -- Iceberg (Lighter Blue)
+ * #0B132B -- Maastricht Blue (Dark Blue)
+ * #594236 -- Dark Liver (Dark Brown) 
+ * #D3FAD6 -- Aero Blue (Pale Green/Teal Colour) */
+
+:root {
+    --main-bg: #CFDBD5;
+    --sub-bg: #6EB4D1;
+    --main-txt: #0B132B;
+    --main-highlight: #594236;
+    --sub-highlight: #D3FAD6;
+}
+
+/* *** General Formatting *** */
+
+body {
+    /* Getting rid of the gross spacing. */
+    margin: 0;
+    padding: 0;
+    /* Simple text formatting. */
+    text-align: center;
+    color: var(--main-txt);
+    background-color: var(--main-bg); 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+}
+
+/* *** End GF *** */
+/* *** NavBar Formatting *** */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--sub-bg);
+    border-bottom: 1px solid var(--sub-highlight);
+}
+
+li {
+    float: left;
+    border-right: 1px solid var(--sub-highlight);
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: var(--main-highlight);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+
+li a:hover {
+    background-color: var(--sub-highlight);
+}
+
+/* *** End NBF *** */
+/* *** Header Formatting *** */
+
+#pg-header {
+    margin-top: 7.5%;
+}
+
+/* *** End HF *** */
+hr {
+    color: var(--main-highlight);
+}
+

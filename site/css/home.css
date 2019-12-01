@@ -1,0 +1,137 @@
+/* WEBD 1102 Final Assignment
+ * By Curtis Jones
+ * Due December 14, 2019 */
+
+/* Colours:
+ * #CFDBD5 -- Light Grey (No dumb name to fix)
+ * #6EB4D1 -- Iceberg (Lighter Blue)
+ * #0B132B -- Maastricht Blue (Dark Blue)
+ * #594236 -- Dark Liver (Dark Brown) 
+ * #D3FAD6 -- Aero Blue (Pale Green/Teal Colour) */
+
+:root {
+    --main-bg: #CFDBD5;
+    --sub-bg: #6EB4D1;
+    --main-txt: #0B132B;
+    --main-highlight: #594236;
+    --sub-highlight: #D3FAD6;
+}
+
+/* *** General Formatting *** */
+
+body {
+    display: grid;
+    grid-template-rows: 1.5fr auto auto auto auto 0.5fr;
+    grid-template-areas:
+    'header'
+    'main'
+    'main'
+    'main'
+    'main'
+    'footer';
+}
+
+/* *** End GF *** */
+/* *** Header Formatting *** */
+
+#pg-header {
+    grid-area: header;
+}
+
+/* *** End HF *** */
+/* *** Main Formatting *** */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'intro intro'
+    'projprev qstatus'
+    'projprev qstatus'
+    'qdocs qdocs';
+}
+
+#intro {
+    grid-area: intro;
+}
+
+/* *** Status Section Formatting *** */
+
+#quick-status {
+    grid-area: qstatus;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+    'stathead'
+    'statone'
+    'stattwo'
+    'statthree';
+    border: 1px solid var(--main-highlight);
+    border-radius: 15px;
+    margin: 1%;
+}
+
+#stat-head {
+    grid-area: stathead;
+}
+
+.status {
+    border: 2px inset var(--main-highlight);
+    border-radius: 20px;
+    margin: 2%;
+}
+
+#status-1 {
+    grid-area: statone;
+}
+
+#status-2 {
+    grid-area: stattwo;
+}
+
+#status-3 {
+    grid-area: statthree;
+}
+
+/* *** End SSF *** */
+/* *** Project Section Formatting *** */
+
+#project-preview {
+    grid-area: projprev;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+    'projhead'
+    'projone'
+    'projtwo';
+    border: 1px solid var(--main-highlight);
+    border-radius: 15px;
+    margin: 1%;
+}
+
+#proj-head {
+    grid-area: projhead;
+}
+
+#project-1 {
+    grid-area: projone;
+}
+
+#project-2 {
+    grid-area: projtwo;
+}
+
+/* *** End PSF *** */
+
+#quick-docs {
+    grid-area: qdocs;
+}
+
+/* *** End MF *** */
+/* *** Footer Formatting *** */
+
+footer {
+    grid-area: footer;
+}
+
+/* *** End FF *** */
