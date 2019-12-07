@@ -44,6 +44,7 @@ body {
 main {
     grid-area: main;
     display: grid;
+    grid-template-columns: 7fr 3fr;
     grid-template-areas:
     'intro intro'
     'projprev qstatus'
@@ -113,6 +114,12 @@ main {
     grid-area: projhead;
 }
 
+.project {
+    border: 2px inset var(--main-highlight);
+    border-radius: 20px;
+    margin: 2%;
+}
+
 #project-1 {
     grid-area: projone;
 }
@@ -122,11 +129,43 @@ main {
 }
 
 /* *** End PSF *** */
+/* *** Documentation Section Formatting *** */
 
 #quick-docs {
     grid-area: qdocs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'dochead dochead dochead'
+    'docone doctwo docthree';
+    border: 1px solid var(--main-highlight);
+    border-radius: 15px;
+    margin: 1%;
 }
 
+#doc-head {
+	grid-area: dochead;
+}
+
+.doc {
+    border: 2px inset var(--main-highlight);
+    border-radius: 20px;
+    margin: 2%;
+}
+
+#doc-1 {
+	grid-area: docone;
+}
+
+#doc-2 {
+	grid-area: doctwo;
+}
+
+#doc-3 {
+	grid-area: docthree;
+}
+
+/* *** End DSF *** */
 /* *** End MF *** */
 /* *** Footer Formatting *** */
 

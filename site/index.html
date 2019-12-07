@@ -21,13 +21,16 @@
             </ul>
         </nav>
         <header id='pg-header'>
-            <h1>Welcome to my home lab!</h1>
+		<h1>Welcome to my home lab!</h1>
         </header>
         <main>
             <section id='intro'>
+		<!--
                 <h2>Intro</h2>
+		-->
 
-                <p>Pellentesque cursus laoreet ex, ac egestas eros laoreet ac. Praesent lacus justo, tempor at malesuada ac, finibus a lacus. Suspendisse potenti. Integer dictum iaculis enim sed commodo. Nunc urna quam, semper eget efficitur ac, tincidunt sit amet mi. Maecenas vitae rutrum nibh. In ac risus imperdiet, consequat risus in, ultrices sapien. Quisque fermentum quam quis lectus porta placerat. Mauris eu eros commodo tortor aliquam aliquam quis at massa. Praesent consequat tincidunt lacinia. Nam rhoncus metus sed tristique tristique. Praesent quis lectus nisl.</p>
+                <p>This site will be serving as a central hub of information regarding my home computer/networking setup.</p>
+                <p>It has come to the point now where I have so much on the go that constantly relearning concepts to understand what I've done is not working.</p>
 
             </section> 
             <section id='quick-status'>
@@ -36,13 +39,19 @@
                 </header>
 
                 <article id='status-1' class='status'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum metus eget lectus eleifend, vitae facilisis dui aliquam. Sed ut congue neque. Suspendisse porttitor nibh eget nibh pulvinar, eget ornare diam molestie.</p>
+                    <h3>Pi Server</h3>
+                    <p>UPTIME: </p>
+                    <p>LAST UPDATE: </p>
                 </article>
                 <article id='status-2' class='status'>
-                <p>Ut id quam varius, cursus tellus in, consectetur erat. Pellentesque et placerat sapien, a malesuada nibh. In semper fringilla nunc at faucibus.</p>
+                    <h3>Home Server</h3>
+                    <p>UPTIME: </p>
+                    <p>LAST UPDATE: </p>
                 </article>
                 <article id='status-3' class='status'>
-                    <p>Suspendisse viverra volutpat sem, ut gravida neque ornare volutpat. Mauris finibus faucibus mauris. Sed vel urna ex. Etiam scelerisque laoreet lectus in ultrices.</p>
+                    <h3>Web Server/Mail Server</h3>
+                    <p>UPTIME: </p>
+                    <p>LAST UPDATE: </p>
                 </article>
 
             </section>
@@ -51,25 +60,42 @@
                     <h2>Projects</h2>
                 </header>
 
-                <article id='project-1'>
-                    <p>Vivamus pellentesque, quam a bibendum convallis, ligula metus viverra leo, eu feugiat diam quam ut felis. Cras non metus malesuada, scelerisque sem dictum, tincidunt velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <article id='project-1' class='project'>
+                    <h3>Email Server</h3>
+                    <p>Goal setup is a DigitalOcean droplet running a dovecot/postfix solution to host a small number of addresses for personal use.</p>
+                    <p>Using a set of articles from arstechnica(maybe add link here) I did already attempt once but was unsuccessful and had to wipe the droplet.</p>
+                    <p>Have managed to dig up some more resources to use and just need to parse them and come to a better understanding of the programs.</p>
                 </article>
-                <article id='project-2'>
-                    <p>Cras ullamcorper varius porta. Maecenas suscipit aliquet enim in efficitur. Praesent sit amet lacus hendrerit, fermentum ex nec, eleifend libero. Suspendisse ac facilisis magna. Etiam consequat est turpis, at lacinia risus tincidunt sed. Praesent vel nunc vel dui aliquam consequat.</p>
+                <article id='project-2' class='project'>
+                    <h3>Laptop Reformat</h3>
+                    <p>Goal setup is a functioning Arch Linux & Windows 10 dual boot on the 256GB NVMe SSD I have.</p>
+                    <p>Currently have a Windows 10 & Manjaro Linux dual boot and it was configured poorly enough that Windows is actually the more stable and less resource hungry OS.</p>
+                    <p>This project does depend on the correct documentation for my current desktop Arch build as that is the only Arch build I am comfortable admining.</p>
                 </article>
 
             </section>
             <section id='quick-docs'>
-                <h2>Documentation</h2>
+                <header id='doc-head'>
+                    <h2>Documentation</h2>
+                </header>
 
-                <article id='doc-1'>
-                    <p>Praesent aliquam vehicula felis, a sollicitudin ante dictum quis. Nam efficitur erat sit amet placerat tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum pellentesque eleifend turpis. In rhoncus iaculis quam id consequat. Nam tristique nibh ut consectetur pellentesque. Nunc quis venenatis dolor. Donec eu placerat mi.</p>
+                <article id='doc-1' class='doc'>
+		    <h3>Desktop PC</h3>
+                    <p>Currently has 3 drives installed: </p>
+                    <p>One has Windows 10 home installed with 512GB of space on the drive.</p>
+                    <p>Another is 256GB with a custom Arch Linux install (that should be the main focus of these docs).</p>
+                    <p>One final drive formatted as NTFS and being used for torrent/steam game storage.</p>
                 </article>
-                <article id='doc-2'>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla eget congue nisi, ac ultrices diam. Phasellus rutrum libero nunc, vel tincidunt sem tincidunt sagittis. Suspendisse eget accumsan neque, quis sollicitudin diam.</p>
+                <article id='doc-2' class='doc'>
+		    <h3>Pi Server</h3>
+                    <p>OpenVPN Server used for remote connections back into the home network.</p>
+                    <p>Includes instructions on where to find CA and how to generate/validate/revoke requests.</p>
                 </article>
-                <article id='doc-3'>
-                    <p>Suspendisse potenti. Donec vel luctus augue. Nulla sodales tempor felis, et hendrerit felis ultricies a. Ut pulvinar arcu consectetur purus bibendum, vitae gravida ligula facilisis.</p>
+                <article id='doc-3' class='doc'>
+		    <h3>Home/Minecraft Server</h3>
+                    <p>Set up the server with a small basic Arch linux install so that minimal resources are being used to actually run the server.</p>
+                    <p>A couple weeks into running the server near constantly the boot drive stopped being detected -- yet to have time to determine cause.</p>
+                    <p>Looks like on boot the pc is trying to boot over the network at a specific mac address -- may just be BIOS issue.</p>
                 </article>
 
             </section>
