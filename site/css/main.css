@@ -85,12 +85,12 @@ nav ul li a:hover {
 /* *** End HF *** */
 /* *** Footer Formatting *** */
 
-hr {
+footer hr {
     color: var(--main-highlight);
 }
 
-small {
-	padding: 20px 0;
+footer small {
+    padding: 20px 0;
 }
 
 /* *** End FF *** */

@@ -119,7 +119,7 @@ main {
 }
 
 #doc-head {
-	grid-area: dochead;
+    grid-area: dochead;
 }
 
 .doc {
@@ -129,15 +129,15 @@ main {
 }
 
 #doc-1 {
-	grid-area: docone;
+    grid-area: docone;
 }
 
 #doc-2 {
-	grid-area: doctwo;
+    grid-area: doctwo;
 }
 
 #doc-3 {
-	grid-area: docthree;
+    grid-area: docthree;
 }
 
 /* *** End DSF *** */

@@ -24,24 +24,16 @@ li {
 /* *** End GF *** */
 /* *** Header Formatting *** */
 
- #pg-header {
-	 grid-area: header;
+#pg-header {
+    grid-area: header;
 }
 
-/* *** General Formatting *** */
-
-/* *** End GF *** */
-/* *** Header Formatting *** */
-
 /* *** End HF *** */
 /* *** Main Formatting *** */
 
-/* *** End MF *** */
-/* *** Footer Formatting *** */
-
-/* *** End FF *** */
-/* *** End HF *** */
-/* *** Main Formatting *** */
+main {
+    display: grid;
+}
 
 /* *** End MF *** */
 /* *** Footer Formatting *** */
