@@ -3,16 +3,47 @@
  * Due December 14, 2019 */
 
 /* Colours:
- * #CFDBD5 -- Light Grey (No dumb name to fix)
- * #6EB4D1 -- Iceberg (Lighter Blue)
- * #0B132B -- Maastricht Blue (Dark Blue)
- * #594236 -- Dark Liver (Dark Brown) 
- * #D3FAD6 -- Aero Blue (Pale Green/Teal Colour) */
+ * --main-bg: #CFDBD5 -- Light Grey (No dumb name to fix)
+ * --sub-bg: #6EB4D1 -- Iceberg (Lighter Blue)
+ * --main-txt: #0B132B -- Maastricht Blue (Dark Blue)
+ * --main-hightlight: #594236 -- Dark Liver (Dark Brown) 
+ * --sub-highlight: #D3FAD6 -- Aero Blue (Pale Green/Teal Colour) */
 
-:root {
-    --main-bg: #CFDBD5;
-    --sub-bg: #6EB4D1;
-    --main-txt: #0B132B;
-    --main-highlight: #594236;
-    --sub-highlight: #D3FAD6;
+/* *** General Formatting *** */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+li {
+    margin: 0;
+}
+
+/* *** End GF *** */
+/* *** Header Formatting *** */
+
+ #pg-header {
+	 grid-area: header;
+}
+
+/* *** General Formatting *** */
+
+/* *** End GF *** */
+/* *** Header Formatting *** */
+
+/* *** End HF *** */
+/* *** Main Formatting *** */
+
+/* *** End MF *** */
+/* *** Footer Formatting *** */
+
+/* *** End FF *** */
+/* *** End HF *** */
+/* *** Main Formatting *** */
+
+/* *** End MF *** */
+/* *** Footer Formatting *** */
+
+/* *** End FF *** */
