@@ -83,6 +83,15 @@ nav ul li a:hover {
 }
 
 /* *** End HF *** */
+/* *** Main Formatting *** */
+
+.pg-section {
+    border: 1px solid var(--main-highlight);
+    border-radius: 15px;
+    margin: 1%;
+}
+
+/* *** End MF *** */
 /* *** Footer Formatting *** */
 
 footer hr {

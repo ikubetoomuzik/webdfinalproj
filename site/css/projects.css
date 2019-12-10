@@ -33,6 +33,16 @@ li {
 
 main {
     display: grid;
+    grid-template-areas:
+    'email laptop';
+}
+
+#email-server {
+    grid-area: email;
+}
+
+#laptop-reformatting {
+    grid-area: laptop;
 }
 
 /* *** End MF *** */

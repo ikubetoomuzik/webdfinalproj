@@ -31,6 +31,12 @@ main {
     grid-area: intro;
 }
 
+article {
+    border: 2px inset var(--main-highlight);
+    border-radius: 20px;
+    margin: 2%;
+}
+
 /* *** Status Section Formatting *** */
 
 #quick-status {
@@ -42,19 +48,10 @@ main {
     'statone'
     'stattwo'
     'statthree';
-    border: 1px solid var(--main-highlight);
-    border-radius: 15px;
-    margin: 1%;
 }
 
 #stat-head {
     grid-area: stathead;
-}
-
-.status {
-    border: 2px inset var(--main-highlight);
-    border-radius: 20px;
-    margin: 2%;
 }
 
 #status-1 {
@@ -80,19 +77,10 @@ main {
     'projhead'
     'projone'
     'projtwo';
-    border: 1px solid var(--main-highlight);
-    border-radius: 15px;
-    margin: 1%;
 }
 
 #proj-head {
     grid-area: projhead;
-}
-
-.project {
-    border: 2px inset var(--main-highlight);
-    border-radius: 20px;
-    margin: 2%;
 }
 
 #project-1 {
@@ -113,19 +101,10 @@ main {
     grid-template-areas:
     'dochead dochead dochead'
     'docone doctwo docthree';
-    border: 1px solid var(--main-highlight);
-    border-radius: 15px;
-    margin: 1%;
 }
 
 #doc-head {
     grid-area: dochead;
-}
-
-.doc {
-    border: 2px inset var(--main-highlight);
-    border-radius: 20px;
-    margin: 2%;
 }
 
 #doc-1 {
