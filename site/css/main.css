@@ -31,7 +31,7 @@ body {
     font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,legend {
     font-family: 'Fira Code', monospace;
     font-weight: 700;
 }
@@ -94,12 +94,12 @@ nav ul li a:hover {
 /* *** End MF *** */
 /* *** Footer Formatting *** */
 
-footer hr {
-    color: var(--main-highlight);
+footer {
+    border-top: 2px solid var(--main-highlight);
+    padding: 20px;
 }
 
 footer small {
-    padding: 20px 0;
 }
 
 /* *** End FF *** */

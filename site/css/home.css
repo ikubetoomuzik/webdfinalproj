@@ -23,7 +23,6 @@ main {
     grid-template-areas:
     'intro intro'
     'projprev qstatus'
-    'projprev qstatus'
     'qdocs qdocs';
 }
 

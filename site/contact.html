@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='icon' href='images/data.png'>
+        <title>Current Home Status</title>
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+        <!-- Bring in my general site stylesheet. -->
+        <link rel='stylesheet' href='css/main.css'>
+        <!-- Bring in page specific stylesheet. -->
+        <link rel='stylesheet' href='css/contact.css'>
+        <!-- Bring in the google font stylesheet.  -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,700|Montserrat&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li><a href='documentation.html'>Docs</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+        <header id='pg-header'>
+            <h1>Contact Me</h1>
+            <ul>
+                <li><a href=''><img src='images/github-logo.png' alt='github logo'></a></li>
+                <li><a href=''><img src='images/youtube.png' alt='youtube logo'></a></li>
+                <li><a href=''><img src='images/spotify.png' alt='spotify logo'></a></li>
+            </ul>
+        </header>
+        <main>
+            <form action=''>
+                <fieldset class='pg-section'>
+                    <legend>
+                        <!-- Picture in here maybe? -->
+                        Who are you?
+                    </legend>
+                    <section class='formpic'>
+                        <img src='images/profile.png' alt='little pic'>
+                    </section >
+                    <section class='forminfo'>
+                        <!-- User Info -->
+                        <label for='name'>Name: </label>
+                        <input type='text' name='name' placeholder='Curtis Jones' required><br>
+                        <label for='email'>Email: </label>
+                        <input type='email' name='email' placeholder='curtis@mail.curtisjones.dev' required><br>
+                        <p>Would you like to be contacted regarding your comments?</p>
+                        <label for='yes'>Yes </label>
+                        <input type='radio' name='contact' id='yes' value='yes' checked>
+                        <label for='no'>No </label>
+                        <input type='radio' name='contact' id='no' value='no'>
+                    </section>
+                </fieldset>
+                <fieldset class='pg-section'>
+                    <legend>
+                        <!-- Picture in here maybe? -->
+                        How can I help ya?
+                    </legend>
+                    <section class='formpic'>
+                        <img src='images/computer.png' alt='little pic'>
+                    </section >
+                    <section class='forminfo'>
+                        <!-- Message Info -->
+                        <label for='msg-choice'>What's it about? </label>
+                        <select name='msg-choice' required>
+                            <option value='project'>Project</option>
+                            <option value='docs'>Docs Request</option>
+                            <option value='other'>Other</option>
+                        </select><br>
+                        <textarea name='msg' rows='10' cols='50' required></textarea>
+                    
+                    </section>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <small>Curtis Jones - Final Assignment - WEBD 1102</small>
+        </footer>
+    </body>
+</html>

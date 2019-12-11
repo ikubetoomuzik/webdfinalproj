@@ -1,0 +1,87 @@
+/* WEBD 1102 Final Assignment
+ * By Curtis Jones
+ * Due December 14, 2019 */
+
+/* Colours:
+ * --main-bg: #CFDBD5 -- Light Grey (No dumb name to fix)
+ * --sub-bg: #6EB4D1 -- Iceberg (Lighter Blue)
+ * --main-txt: #0B132B -- Maastricht Blue (Dark Blue)
+ * --main-hightlight: #594236 -- Dark Liver (Dark Brown) 
+ * --sub-highlight: #D3FAD6 -- Aero Blue (Pale Green/Teal Colour) */
+
+/* *** General Formatting *** */
+
+::placeholder {
+    color: var(--sub-highlight);
+}
+
+/* *** End GF *** */
+/* *** Header Formatting *** */
+
+/* *** End HF *** */
+/* *** Main Formatting *** */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+li a img {
+    width: 50px;
+    height: 50px;
+} 
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    '. .';
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+.formpic {
+    height: 200px;
+    width: 200px;
+}
+*/
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.forminfo {
+    flex: 0 0 75%;
+}
+
+input, select, textarea {
+    width: 75%;
+    background-color: var(--sub-bg);
+    border: 2px solid var(--main-highlight);
+    border-radius: 10px;
+    margin: 2%;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+textarea {
+    width: 90%;
+}
+
+/* *** End MF *** */
+/* *** Footer Formatting *** */
+
+/* *** End FF *** */
