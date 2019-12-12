@@ -29,6 +29,7 @@ main {
     '. . .';
 }
 
+/*
 article header {
     min-height: 100px;
     display: grid;
@@ -36,6 +37,7 @@ article header {
     grid-template-areas:
     '. .';
 }
+*/
 
 h3 {
     text-align: left;

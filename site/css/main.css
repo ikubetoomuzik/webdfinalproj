@@ -85,10 +85,29 @@ nav ul li a:hover {
 /* *** End HF *** */
 /* *** Main Formatting *** */
 
+h2 {
+    padding: 10px 0;
+}
+
 .pg-section {
     border: 1px solid var(--main-highlight);
     border-radius: 15px;
     margin: 1%;
+}
+
+.section-header {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    '. .';
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* *** End MF *** */

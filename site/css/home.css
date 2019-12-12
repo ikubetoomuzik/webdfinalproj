@@ -14,6 +14,11 @@
 /* *** End GF *** */
 /* *** Header Formatting *** */
 
+#pg-header {
+    width: 50%;
+    margin: 5% auto 0 auto;
+}
+
 /* *** End HF *** */
 /* *** Main Formatting *** */
 
