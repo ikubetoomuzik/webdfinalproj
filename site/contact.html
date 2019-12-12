@@ -33,45 +33,48 @@
             <form action=''>
                 <fieldset class='pg-section'>
                     <legend>
-                        <!-- Picture in here maybe? -->
                         Who are you?
                     </legend>
-                    <section class='formpic'>
-                        <img src='images/profile.png' alt='little pic'>
-                    </section >
-                    <section class='forminfo'>
-                        <!-- User Info -->
-                        <label for='name'>Name: </label>
-                        <input type='text' name='name' placeholder='Curtis Jones' required><br>
-                        <label for='email'>Email: </label>
-                        <input type='email' name='email' placeholder='curtis@mail.curtisjones.dev' required><br>
-                        <p>Would you like to be contacted regarding your comments?</p>
-                        <label for='yes'>Yes </label>
-                        <input type='radio' name='contact' id='yes' value='yes' checked>
-                        <label for='no'>No </label>
-                        <input type='radio' name='contact' id='no' value='no'>
-                    </section>
+                    <div class='container'>
+                        <section class='formpic'>
+                            <img src='images/profile.png' alt='little pic'>
+                        </section >
+                        <section class='forminfo'>
+                            <!-- User Info -->
+                            <label for='name'>Name: </label>
+                            <input type='text' name='name' placeholder='Curtis Jones' required><br>
+                            <label for='email'>Email: </label>
+                            <input type='email' name='email' placeholder='curtis@mail.curtisjones.dev' required><br>
+                            <p>Would you like to be contacted regarding your comments?</p>
+                            <label for='yes'>Yes </label>
+                            <input type='radio' name='contact' id='yes' value='yes' checked>
+                            <label for='no'>No </label>
+                            <input type='radio' name='contact' id='no' value='no'>
+                        </section>
+                    </div>
                 </fieldset>
                 <fieldset class='pg-section'>
                     <legend>
-                        <!-- Picture in here maybe? -->
                         How can I help ya?
                     </legend>
-                    <section class='formpic'>
-                        <img src='images/computer.png' alt='little pic'>
-                    </section >
-                    <section class='forminfo'>
-                        <!-- Message Info -->
-                        <label for='msg-choice'>What's it about? </label>
-                        <select name='msg-choice' required>
-                            <option value='project'>Project</option>
-                            <option value='docs'>Docs Request</option>
-                            <option value='other'>Other</option>
-                        </select><br>
-                        <textarea name='msg' rows='10' cols='50' required></textarea>
-                    
-                    </section>
+                    <div class='container'>
+                        <section class='formpic'>
+                            <img src='images/computer.png' alt='little pic'>
+                        </section >
+                        <section class='forminfo'>
+                            <!-- Message Info -->
+                            <label for='msg-choice'>What's it about? </label>
+                            <select name='msg-choice' required>
+                                <option value='project'>Project</option>
+                                <option value='docs'>Docs Request</option>
+                                <option value='other'>Other</option>
+                            </select><br>
+                            <textarea name='msg' rows='10' cols='50' placeholder='Tell me what you think...' required></textarea>
+                        </section>
+                    </div>
                 </fieldset>
+                <p>Please leave 24 - 48 hours if you request a response.</p>
+                <input type='submit' value='Thanks for your input!'>
             </form>
         </main>
         <footer>

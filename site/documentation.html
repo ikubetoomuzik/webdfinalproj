@@ -25,14 +25,62 @@
             <h1>Documentation</h1>
         </header>
         <main>
-            <article id='archdesktop'>
-                <h2>Desktop</h2>
+            <article id='archdesktop' class='pg-section'>
+                <header>
+                    <h2>Desktop</h2>
+                    <figure>
+                    <img src='images/arch.png' alt='arch-logo'>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Current Setup</h3>
+                    <p>Right now I have three seperate drives in my home pc:</p>
+                    <ul>
+                        <li>512GB SATA Kingston SSD - Windows 10 Home</li>
+                        <li>256GB SATA Kingston SSD - Arch Linux</li>
+                        <li>1TB 7200RPM Seagate HDD - Used for Steam and Media Storage</li>
+                    </ul>
+                </section> 
+                <section>
+                    <h3>Arch Linux Install</h3>
+                    <p>My goal was basically to start with the most minimal install and build it up from there.</p>
+                    <p>I'm pretty sure the only install groups I used were base and base-devel.</p>
+                    <p>My system uses xOrg as the display server with LightDM and AwesomeWM as the login and window managers.</p>
+                </section> 
             </article>
-            <article id='piserver'>
-                <h2>Pi Server</h2>
+            <article id='piserver' class='pg-section'>
+                <header>
+                    <h2>Pi Server</h2>
+                    <figure>
+                        <img src='images/ubuntu.png' alt='ubuntu-logo'>
+                    </figure>
+                </header>
+                <section>
+                    <h3>The Basics</h3>
+                    <p>The Pi presents a different challenge as it is powered by an ARM processor. This is a more efficient if much less powerful architechture than the normal desktop x86 architechture.</p>
+                    <p>Due to the large community around the Pi there are many OSs designed specifically to take advantage of the ARM architecture and run well. But being me I instead chose to find the Ubuntu Server ARM build so I could get some experience with that...</p>
+                    <p>The install process was odd but relatively painless. There is a live ARM Ubuntu Server image that is updated and released semi-regularly. The install consists of just copying the iso file onto a sd card then inserting it into the Pi.</p>
+                </section> 
+                <section>
+                    <h3>OpenVPN Server</h3>
+                    <p>The main service running here is OpenVPN. I use this mostly to connect back home and work or get files. But a nice secondary use is to give family access to admin the Minecraft server when I'm not home.</p>
+                </section> 
             </article>
-            <article id='homeserver'>
-                <h2>Home/Minecraft Server</h2>
+            <article id='homeserver' class='pg-section'>
+                <header>
+                    <h2>Home/Minecraft Server</h2>
+                    <figure>
+                        <img src='images/minecraft.png' alt='minecraft-logo'>
+                    </figure>
+                </header>
+                <section>
+                    <h3>So why?</h3>
+                    <p>Found a good local deal for an old refurbished Optiplex PC with a simple core duo and DDR3 RAM. The good news is that I have an old video card and additional RAM so I could possibly make it into a crappy gaming PC for a guest or LAN party.</p>
+                    <p>Also needed to find a more power efficient option for the minecraft server that my cousin and I use. And since its gonna be on 24/7 for possible minecraft - I have no issue setting up a small ftp server and network drive to get the media files out of the desktop.</p>
+                </section> 
+                <section>
+                    <h3>What is the OS then?</h3>
+                </section> 
             </article>
         </main>
         <footer>
