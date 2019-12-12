@@ -2,3 +2,10 @@ flaticon.com
 https://fatduck.org/gnulinux/distro-logos.en.html
 https://www.iconfinder.com/icons/386451/arch_linux_archlinux_icon
 https://www.iconfinder.com/icons/386503/ubuntu_icon
+https://www.flaticon.com/free-icon/laptop_801859?term=laptop&page=1&position=11
+https://www.flaticon.com/free-icon/mail_559407?term=email&page=1&position=54
+https://www.flaticon.com/free-icon/list-interface-symbol_45000?term=list&page=1&position=21
+https://www.flaticon.com/free-icon/project-management_1087902?term=project&page=1&position=14
+https://www.flaticon.com/free-icon/charging-battery_1679803?term=status&page=2&position=74
+https://www.flaticon.com/free-icon/file_149346?term=document&page=1&position=34
+

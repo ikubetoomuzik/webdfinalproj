@@ -24,17 +24,14 @@ li {
 /* *** End GF *** */
 /* *** Header Formatting *** */
 
-#pg-header {
-    grid-area: header;
-}
-
 /* *** End HF *** */
 /* *** Main Formatting *** */
 
 main {
     display: grid;
     grid-template-areas:
-    'email laptop';
+    'email'
+    'laptop';
 }
 
 #email-server {
@@ -49,3 +46,21 @@ main {
 /* *** Footer Formatting *** */
 
 /* *** End FF *** */
+
+@media only screen and (min-width: 768px) {
+    #pg-header {
+        margin-top: 7.5%;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-areas:
+        'email laptop';
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+}

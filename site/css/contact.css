@@ -35,9 +35,10 @@ li a img {
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    '. .';
+    '.'
+    '.';
 }
 
 legend {
@@ -87,7 +88,7 @@ select:invalid {
 }
 
 input[type=submit], p {
-    grid-column: 1 / span 2;
+    /*grid-column: 1 / span 2;*/
     margin: 10px auto;
     width: auto;
 }
@@ -96,3 +97,26 @@ input[type=submit], p {
 /* *** Footer Formatting *** */
 
 /* *** End FF *** */
+
+@media only screen and (min-width: 768px) {
+    #pg-header {
+        margin-top: 7.5%;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        '. .';
+    }
+    input[type=submit], p {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+}

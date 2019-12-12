@@ -19,11 +19,12 @@
 
 main {
     display: grid;
-    grid-template-columns: 7fr 3fr;
     grid-template-areas:
-    'intro intro'
-    'projprev qstatus'
-    'qdocs qdocs';
+    'intro'
+    'qstatus'
+    'projprev'
+    'qdocs';
+
 }
 
 #intro {
@@ -97,10 +98,12 @@ article {
 #quick-docs {
     grid-area: qdocs;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-areas:
-    'dochead dochead dochead'
-    'docone doctwo docthree';
+    'dochead'
+    'docone'
+    'doctwo'
+    'docthree';
 }
 
 #doc-head {
@@ -124,3 +127,77 @@ article {
 /* *** Footer Formatting *** */
 
 /* *** End FF *** */
+
+@media only screen and (min-width: 768px) {
+    #pg-header {
+        margin-top: 7.5%;
+        width: 50%;
+    }
+    #quick-status {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'stathead stathead'
+        'statone stattwo'
+        'statthree statthree';
+    }
+    #quick-docs {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'dochead dochead'
+        'docone doctwo'
+        'docthree docthree';
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #quick-status {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'stathead stathead stathead'
+        'statone stattwo statthree';
+    }
+    #project-preview {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        'projhead projhead'
+        'projone projtwo';
+    }
+    #quick-docs {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'dochead dochead dochead'
+        'docone doctwo docthree';
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        grid-template-areas:
+        'intro intro'
+        'projprev qstatus'
+        'qdocs qdocs'
+        'qdocs qdocs';
+    }
+    #quick-status {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+        'stathead'
+        'statone'
+        'stattwo'
+        'statthree';
+    }
+}
+
