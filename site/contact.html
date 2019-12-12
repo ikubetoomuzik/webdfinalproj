@@ -21,20 +21,19 @@
                 <li><a href='contact.html'>Contact</a></li>
             </ul>
         </nav>
-        <header id='pg-header'>
+        <header id='pg-header' class='section-header'>
             <h1>Contact Me</h1>
             <ul>
-                <li><a href=''><img src='images/github-logo.png' alt='github logo'></a></li>
-                <li><a href=''><img src='images/youtube.png' alt='youtube logo'></a></li>
-                <li><a href=''><img src='images/spotify.png' alt='spotify logo'></a></li>
+                <li><a href='https://github.com/ikubetoomuzik'><img src='images/github-logo.png' alt='github logo'></a></li>
+                <li><a href='https://www.youtube.com/channel/UCioGPEJclBKIIJc5SJo6A0g'><img src='images/youtube.png' alt='youtube logo'></a></li>
+                <li><a href='https://open.spotify.com/user/22o4lsjhqnd6rwsrnegbpnkpy'><img src='images/spotify.png' alt='spotify logo'></a></li>
             </ul>
         </header>
         <main>
-            <form action=''>
+            <form action='https://webdevbasics.net/scripts/demo.php'>
                 <fieldset class='pg-section'>
-                    <legend>
-                        Who are you?
-                    </legend>
+                    <legend>Who are you?</legend>
+                    <!-- It seems that only Firefox recognizes a Fieldset element as a vaild flex container, so we use a div instead for compatibility. -->
                     <div class='container'>
                         <section class='formpic'>
                             <img src='images/profile.png' alt='little pic'>
@@ -54,9 +53,7 @@
                     </div>
                 </fieldset>
                 <fieldset class='pg-section'>
-                    <legend>
-                        How can I help ya?
-                    </legend>
+                    <legend>How can I help ya?</legend>
                     <div class='container'>
                         <section class='formpic'>
                             <img src='images/computer.png' alt='little pic'>
@@ -65,6 +62,7 @@
                             <!-- Message Info -->
                             <label for='msg-choice'>What's it about? </label>
                             <select name='msg-choice' required>
+                                <option value='' selected disabled hidden>Please make a selection..</option>
                                 <option value='project'>Project</option>
                                 <option value='docs'>Docs Request</option>
                                 <option value='other'>Other</option>

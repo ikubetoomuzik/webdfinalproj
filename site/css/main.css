@@ -31,9 +31,13 @@ body {
     font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6,legend {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Fira Code', monospace;
     font-weight: 700;
+}
+
+h1,h2 {
+    padding: 10px 0;
 }
 
 /* *** End GF *** */
@@ -79,15 +83,12 @@ nav ul li a:hover {
 /* *** Header Formatting *** */
 
 #pg-header {
-    margin-top: 7.5%;
+    width: 50%;
+    margin: 5% auto 0 auto;
 }
 
 /* *** End HF *** */
 /* *** Main Formatting *** */
-
-h2 {
-    padding: 10px 0;
-}
 
 .pg-section {
     border: 1px solid var(--main-highlight);

@@ -11,20 +11,13 @@
 
 /* *** General Formatting *** */
 
-::placeholder {
-    color: var(--sub-highlight);
-}
-
 /* *** End GF *** */
 /* *** Header Formatting *** */
-
-/* *** End HF *** */
-/* *** Main Formatting *** */
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 25px 0;
     overflow: hidden;
 }
 
@@ -37,6 +30,9 @@ li a img {
     height: 50px;
 } 
 
+/* *** End HF *** */
+/* *** Main Formatting *** */
+
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,19 +42,14 @@ form {
 
 legend {
     text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
 }
-
-/*
-.formpic {
-    height: 200px;
-    width: 200px;
-}
-*/
 
 img {
     max-width: 100%;
@@ -69,22 +60,30 @@ img {
     flex: 0 0 75%;
 }
 
+::placeholder {
+    color: var(--sub-highlight);
+}
+
 input, select, textarea {
     width: 75%;
+    margin: 2%;
+    padding-left: 5px;
     background-color: var(--sub-bg);
     border: 2px solid var(--main-highlight);
     border-radius: 10px;
-    margin: 2%;
     resize: none;
-    padding-left: 5px;
 }
 
 input[type=radio] {
     width: auto;
 }
 
-textarea {
-    width: 90%;
+select,option {
+    color: var(--main-txt);
+}   
+
+select:invalid {
+    color: var(--sub-highlight);
 }
 
 input[type=submit], p {
